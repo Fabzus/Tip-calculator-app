@@ -22,7 +22,7 @@ This is a solution to the [Tip calculator app](https://www.frontendmentor.io/cha
 ### Links
 
 - Solution URL: [github](https://github.com/Fabzus/Tip-calculator-app)
-- Live Site URL: [github](https://fabzus.github.io/GIthub-Serach-App/)
+- Live Site URL: [github](https://fabzus.github.io/Tip-calculator-app/)
 
 ## My process
 
