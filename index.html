@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="calculator-container">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="SPLITTER" />
+        </div>
+        <div class="calculator">
+          <div class="calculator-inputs">
+            <div class="row-input">
+              <span class="label">Bill</span>
+              <div class="form">
+                <input
+                  type="number"
+                  placeholder="0"
+                  id="bill"
+                  onkeyup="valSetter()"
+                />
+                <img src="./images/icon-dollar.svg" alt="icon-dollar" />
+              </div>
+            </div>
+            <div class="row-input">
+              <span class="label">Select tip %</span>
+              <div class="tip-selector">
+                <label class="tip-btn">
+                  <input type="radio" name="tip" class="tipRadio" value="5" />
+                  <i class="checkmark">5%</i>
+                </label>
+                <label class="tip-btn">
+                  <input type="radio" name="tip" class="tipRadio" value="10" />
+                  <i class="checkmark">10%</i>
+                </label>
+                <label class="tip-btn">
+                  <input type="radio" name="tip" class="tipRadio" value="15" />
+                  <i class="checkmark">15%</i>
+                </label>
+                <label class="tip-btn">
+                  <input type="radio" name="tip" class="tipRadio" value="25" />
+                  <i class="checkmark">25%</i>
+                </label>
+                <label class="tip-btn">
+                  <input type="radio" name="tip" class="tipRadio" value="50" />
+                  <i class="checkmark">50%</i>
+                </label>
+
+                <div class="tip-btn">
+                  <input
+                    name="tip"
+                    type="number"
+                    placeholder="Custom"
+                    id="custom"
+                    class="btn"
+                    onkeyup="customSetter()"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row-input">
+              <span class="label">Number of people</span>
+              <div class="form">
+                <input
+                  type="number"
+                  placeholder="0"
+                  id="people"
+                  onkeyup="valSetter()"
+                />
+                <img src="./images/icon-person.svg" alt="icon-person" />
+              </div>
+            </div>
+          </div>
+          <div class="calculator-results">
+            <div class="results">
+              <div class="result-row">
+                <div>
+                  <h3>Tip amount</h3>
+                  <p>/ person</p>
+                </div>
+                <h2 id="tipAmount">$0.00</h2>
+              </div>
+              <div class="result-row">
+                <div>
+                  <h3>Tip total</h3>
+                  <p>/ person</p>
+                </div>
+                <h2 id="tipTotal">$0.00</h2>
+              </div>
+            </div>
+            <div class="reset-btn" id="reset-btn">RESET</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/alinbalog/">Balog Alin</a>.
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
